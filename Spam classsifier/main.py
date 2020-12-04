@@ -67,7 +67,7 @@ from sklearn.metrics import accuracy_score
 accuracy_score_Bow_stemmer = accuracy_score(y_test, pred_bow_stemmer)
 accuracy_score_Bow_lemmatizer = accuracy_score(y_test, pred_bow_lemmatizer)
 
-# Everythig same using TFIDF
+# Everythig same using TFIDFs
 from sklearn.feature_extraction.text import TfidfVectorizer
 count_vectorizer_tfidf = TfidfVectorizer(max_features=5000)
 X_tfidf_stemmer = count_vectorizer_tfidf.fit_transform(corpus_stemer).toarray()
